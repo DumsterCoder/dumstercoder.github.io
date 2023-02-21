@@ -1,0 +1,1176 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Standard utilities */
+
+.btn {
+    color: white;
+    padding: 30px 30px;
+    text-decoration: none;
+    border: 2px solid white;
+}
+
+
+/* Media Queries */
+
+
+@media(min-width:1024px) {
+
+    #nav-1 {
+        height: 80px;
+    }
+
+    #nav-1 h1 a {
+        padding-bottom: none;
+        padding-top: none;
+        margin-top: none;
+    }
+
+    #nav-1 ul {
+        padding-right: 30px;
+    }
+
+    #nav-1 ul li a {
+        padding: 22px 30px;
+    }
+
+    #nav-2 {
+        height: 45px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #nav-2 ul {
+        display: flex;
+        padding-right: 30px;
+        list-style: none;
+    }
+
+    #nav-2 ul li a {
+        padding: 10px 20px 16px;
+        text-decoration: none;
+    }
+
+    #case .info {
+        padding: 5% 69% 0% 6%;
+    }
+
+    #hrs-rts .wrap {
+        display: flex;
+    }
+
+    #hrs-rts .table-one {
+        padding: 5% 5% 6% 0%;
+    }
+
+    #hrs-rts .table-two {
+        padding: 5% 5% 6% 0%;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1023px) {
+
+    #nav-1 {
+        display: flex;
+        flex-direction: column;
+        height: 146px;
+    }
+
+    #nav-1 h1 a {
+        padding-bottom: none;
+    }
+
+    #nav-1 ul {
+        margin-bottom: 22px;
+        padding-top: 0px;
+    }
+
+    #nav-1 ul li a {
+        padding: 22px 20px;
+    }
+
+    #nav-2 {
+        height: 45px;
+        display: flex;
+    }
+
+    #nav-2 ul {
+        list-style: none;
+        margin: 0 auto;
+    }
+
+    #nav-2 ul li a {
+        padding: 10px 10px 16px;
+        text-decoration: none;
+    }
+
+    #case .info {
+        padding: 5% 65% 0% 6%;
+    }
+
+    #hrs-rts .wrap {
+        display: flex;
+        flex-direction: column;
+        padding: 5% 0% 6% 0%;
+    }
+
+    #hrs-rts .table-one {
+        padding: 5% 5% 6% 0%;
+    }
+
+    #hrs-rts .table-two {
+        padding: 5% 5% 6% 0%;
+    }
+}
+
+
+@media(min-width: 626px) and (max-width:767px) {
+
+    #nav-1 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #nav-1 h1 a {
+        padding-bottom: 20px;
+    }
+
+    #nav-1 ul {
+        margin-bottom: 42px;
+        padding-top: 10px;
+        padding-right: 0px;
+    }
+
+    #nav-1 ul li a {
+        padding: 25px;
+    }
+
+    #nav-2 {
+        display: none;
+    }
+
+    #case .info {
+        padding: 5% 59% 0% 6%;
+    }
+
+    #hrs-rts .wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hrs-rts .table-one {
+        padding: 5% 5% 6% 0%;
+    }
+
+    #hrs-rts .table-two {
+        padding: 5% 5% 6% 0%;
+    }
+}
+
+@media(max-width: 625px) {
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* Top Navbar */
+
+
+
+#nav-1 {
+    background-color: #86BAA1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+#nav-1 h1 a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Kaushan Script';
+    font-size: 3rem;
+    float: left;
+    padding-left: 30px;
+}
+
+#nav-1 ul {
+    float: right;
+}
+
+#nav-1 ul li {
+    float: left;
+    list-style: none;
+}
+
+#nav-1 ul li a {
+    text-decoration: none;
+    color: black;
+    margin-left: 25px auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    transition: 0.5s;
+}
+
+#nav-1 ul li a:hover {
+    background-color: #e6e6e6;
+}
+
+/* Lower Nav Bar */
+
+#nav-2 {
+    background-color: white;
+    overflow: auto;
+}
+
+#nav-2 ul {
+    float: right;
+}
+
+#nav-2 ul li {
+    margin-top: 10px;
+    float: left;
+}
+
+#nav-2 ul li a {
+    color: black;
+    transition: 0.5s;
+}
+
+#nav-2 ul li a:hover {
+    background-color: #86BAA1;
+    animation: fadein;
+    animation-duration: 1s;
+}
+
+
+/* Hero Section */
+
+
+#case {
+    height: 690px;
+    /* width: 100%; */
+    background: url(/img/7.jpg) no-repeat center/cover;
+}
+
+#case .info {
+    color: aliceblue;
+}
+
+#case .info h2 {
+    font-size: 51px;
+    font-family: 'Alexandria', sans-serif;
+
+    animation: bounce;
+    animation-duration: 1.3s;
+}
+
+#case .info p {
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+
+#case .info a {
+    transition: 0.5s;
+}
+
+#case .info a:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+
+
+
+
+/* Parties & Corporate Events */
+
+#party {
+    height: 420px;
+    background-color: #e6e6e6;
+
+}
+
+#party .booking-info {
+    float: left;
+    width: 50%;
+    padding: 3% 1% 4% 4%;
+}
+
+#party .booking-info h2 {
+    font-size: 51px;
+    font-family: 'Alexandria', sans-serif;
+    padding-bottom: 20pxs;
+}
+
+#party .booking-info p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 5%;
+}
+
+#party .booking-info a {
+    text-decoration: none;
+    color: black;
+    padding: 20px 90px;
+    background-color: #86BAA1;
+}
+
+#party .booking-info a:hover {
+    background-color: #4a6659;
+}
+
+#party .booking-pic {
+    width: 50%;
+    float: right;
+    padding: 45px 30px;
+}
+
+#party .booking-pic img {
+    height: 300px;
+    width: 95%;
+    object-fit: cover;
+}
+
+
+
+
+
+/* Business Hours and Rates */
+
+#hrs-rts {
+    height: auto;
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#hrs-rts h2 {
+    font-size: 51px;
+    padding-top: 40px;
+    font-family: 'Alexandria', sans-serif;
+}
+
+#hrs-rts p {
+    padding-top: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+#hrs-rts .wrap {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 80%;
+    margin: 3% 4% 8% 4%;
+    justify-content: center;
+}
+
+#hrs-rts .wrap table {
+    border-collapse: separate;
+    border-spacing: 70px 0px;
+}
+
+#hrs-rts table td {
+    padding-top: 3px;
+}
+
+#hrs-rts table th {
+    padding-top: 20px;
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Bowling Links Bar */
+
+#bowl-links {
+    background-color: #86BAA1;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+#bowl-links h2 {
+    padding: 10px 0px;
+    font-family: 'Alexandria', sans-serif;
+    font-size: 25px;
+}
+
+#bowl-links .enclose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bowl-links .c-1,
+.c-2,
+.c-3,
+.c-4,
+.c-5,
+.c-6 {
+    padding: 30px 10% 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bowl-links img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+#bowl-links p {
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#bowl-links img:hover {
+    opacity: 70%;
+}
+
+#bowl-links .link-1 {
+    background-color: #e6e6e6;
+    border-radius: 100%;
+}
+
+#bowl-links .c-6 a {
+    height: 100px;
+    padding-top: 40px;
+    padding-left: 10px;
+    width: 100px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: black;
+    background-color: #e6e6e6;
+}
+
+
+
+
+/* Pro Shop */
+
+
+#pro-shop {
+    display: flex;
+    height: 420px;
+    background-color: #e6e6e6;
+}
+
+
+#pro-shop .pro-img {
+    width: 50%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pro-shop .pro-img img {
+    height: 300px;
+    width: 85%;
+    object-fit: cover;
+}
+
+#pro-shop .pro-case {
+    float: right;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+#pro-shop .pro-case p {
+    padding-bottom: 45px;
+}
+
+#pro-shop .pro-case a {
+    padding: 20px 90px;
+    background-color: #86BAA1;
+    text-decoration: none;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#pro-shop .pro-case a:hover {
+    background-color: #4a6659;
+}
+
+#pro-shop .pro-case h2 {
+    color: #000000;
+    font-size: 51px;
+    font-family: 'Alexandria', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+
+
+
+/* Leagues */
+
+#leagues {
+    background-color: #e6e6e6;
+    height: auto;
+    display: flex;
+    color: black;
+}
+
+#leagues .left-card {
+    float: left;
+    flex-direction: column;
+    padding: 80px 60px;
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 45%;
+}
+
+#leagues .right-card {
+    float: right;
+    padding: 50px 25px 50px 25px;
+    width: 55%;
+}
+
+#leagues .right-card .league-wrap {
+    border: 2px solid black;
+    border-radius: 10px;
+    height: auto;
+    padding: 0px 0px 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#leagues .left-card .acrobat a {
+    padding: 20px 80px;
+    color: #000000;
+    text-decoration: none;
+    background-color: #86BAA1;
+}
+
+#leagues .left-card .acrobat a:hover {
+    background-color: #4c6459;
+    color: rgb(0, 0, 0);
+}
+
+#leagues .left-card p a {
+    text-decoration: none;
+    color: #001dc0;
+}
+
+#leagues .left-card p {
+    padding-bottom: 60px;
+}
+
+#leagues h2 {
+    font-size: 51px;
+    font-family: 'Alexandria', sans-serif;
+    padding-bottom: 10px;
+}
+
+#leagues h3 {
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 10px;
+}
+
+#leagues .league-wrap table {
+    border-collapse: separate;
+    border-spacing: 14px 15px;
+    padding-top: 30px;
+    overflow: auto;
+}
+
+#leagues .league-wrap table a {
+    text-decoration: none;
+    color: rgb(58, 97, 122);
+}
+
+#leagues .league-wrap table tr td {
+    padding-bottom: 1px;
+}
+
+#leagues .league-wrap table tr th {
+    padding: 10px 0px;
+
+}
+
+
+
+/* Junior Bowling */
+
+#junior-bowling {
+    height: auto;
+    background-color: #e6e6e6;
+    display: flex;
+}
+
+#junior-bowling .junior-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#junior-bowling .junior-left img {
+    height: 300px;
+    width: 85%;
+    object-fit: cover;
+
+}
+
+#junior-bowling .junior-right {
+    padding: 50px 50px 50px 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#junior-bowling .junior-right h2 {
+    font-size: 51px;
+    padding-bottom: 15px;
+    font-family: 'Alexandria', sans-serif;
+}
+
+#junior-bowling .junior-right h3 {
+    padding-bottom: 20px;
+}
+
+#junior-bowling .junior-right .junior-btn {
+    padding-top: 20px;
+    padding: 30px;
+    display: inline-block;
+}
+
+#junior-bowling .junior-right a {
+    text-decoration: none;
+    color: rgb(58, 97, 122);
+}
+
+#junior-bowling .junior-right .junior-btn a:hover {
+    background-color: #4c6459;
+}
+
+#junior-bowling .junior-right .junior-btn a {
+    padding: 20px 30px;
+    background-color: #86BAA1;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Honor Scores */
+
+#honor-scores {
+    height: auto;
+    background-color: #e6e6e6;
+    text-align: center;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+#honor-scores .honor-title {
+    font-family: 'FrankliSn Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #86BAA1;
+    padding-top: 40px;
+}
+
+#honor-scores .honor-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0px 100px 0px;
+}
+
+#honor-scores .honor-title h2 {
+    font-family: 'Alexandria', sans-serif;
+    font-size: 51px;
+}
+
+#honor-scores .honor-title h4 {
+    font-size: 1rem;
+    padding-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#honor-scores .honor-title p {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px 60px 40px 60px;
+}
+
+#honor-scores .honor-list table {
+    border-collapse: separate;
+    border-spacing: 40px 0px;
+    padding: 20px 0px 30px 0px;
+}
+
+#honor-scores .honor-list table th {
+    padding-bottom: 30px;
+}
+
+
+/* Footer */
+
+#footer {
+    height: 90px;
+    background-color: #292b2a;
+    color: #000000;
+    text-align: center;
+}
+
+#footer .footer-wrap {
+    padding-top: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#footer .footer-wrap p {
+    padding-right: 40px;
+}
+
+#footer .footer-wrap a i {
+    font-size: 35px;
+    text-decoration: none;
+    color: #ffff;
+}
+
+#footer .footer-wrap a i:hover {
+    color: #4a6659;
+    font-size: 35px;
+}
+
+#footer .footer-wrap a i::after {
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* About Page */
+
+#about-case {
+    height: 730px;
+    background-color: #d4dbd3;
+}
+
+#about-case .about-left {
+    float: left;
+    width: 50%;
+    padding: 6% 1% 4% 6%;
+    text-align: center;
+}
+
+#about-case .about-left h2 {
+    font-size: 41px;
+    font-family: 'Alexandria', sans-serif;
+    padding-bottom: 30px;
+}
+
+#about-case .about-left p {
+    padding-bottom: 60px;
+}
+
+#about-case .about-left a {
+    padding: 20px 90px;
+    text-decoration: none;
+    color: black;
+    background-color: #86BAA1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#about-case .about-left a:hover {
+    background-color: #4c6459;
+}
+
+#about-case .about-right {
+    float: right;
+    width: 50%;
+    padding: 5% 1% 3% 7%;
+}
+
+#about-case .about-right iframe {
+    height: 400px;
+    width: 90%;
+    border-radius: 3px;
+}
+
+#about-case .about-right h3 {
+    padding-bottom: 15px;
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+/* Events Page */
+
+#events-hero {
+    background-color: #c1d8be;
+    height: 270px;
+}
+
+#events-hero .events-bg {
+    text-align: center;
+    padding-top: 3.5%;
+}
+
+#events-hero .header h2 {
+    font-size: 41px;
+    font-family: 'Alexandria', sans-serif;
+}
+
+#events-hero .header h4 {
+    padding-top: 15px;
+    font-size: 1.3rem;
+}
+
+#events-hero .header p {
+    font-size: 1.2rem;
+    padding-top: 5px;
+}
+
+#events-hero .header ul {
+    padding-top: 70px;
+    padding-left: 9%;
+    list-style: none;
+}
+
+#events-hero .header ul li {
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 30px;
+}
+
+#events-hero .header ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#events-info {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 50px 0px;
+    /* text-align: center; */
+}
+
+#events-info .sms,
+.gbw,
+.dd {
+    margin: 19px 15px 40px 0px;
+    padding: 1%;
+    background-color: #dab79b;
+    width: 30%;
+    border-radius: 2px;
+}
+
+#events-info .sms h2,
+.gbw h2,
+.dd h2 {
+    padding-bottom: 30px;
+}
+
+
+
+/* Contact Page */
+
+#upper-case {
+    height: auto;
+    display: flex;
+    background-color: #c1d8be;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#upper-case .contact-case {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#upper-case .contact-case h2 {
+    font-size: 41px;
+    font-family: 'Alexandria', sans-serif;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#upper-case .contact-case table {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#upper-case .contact-case table th {
+    padding-bottom: 20px;
+}
+
+#upper-case .contact-case table th i {
+    padding: 25px;
+    border-radius: 100px;
+    background-color: #e6e6e6;
+    font-size: 40px;
+    color: #000000;
+}
+
+#upper-case .contact-case table tr .orange {
+    font-size: 3rem
+}
+
+#upper-case .contact-case table td {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 300px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    font-family: 'Alexandria', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+
+/* Form Section */
+
+input {
+    border: none;
+}
+
+input:active {
+    outline: 0;
+    border: none;
+}
+
+#lower-case {
+    height: 500px;
+    display: flex;
+}
+
+#lower-case .form-left {
+    float: left;
+    width: 50%;
+    padding: 4% 7% 12% 10%;
+}
+
+#lower-case .form-left h2 {
+    font-family: 'Alexandria', sans-serif;
+    font-size: 41px;
+    padding-bottom: 10px;
+}
+
+#lower-case .form-right {
+    padding: 4%;
+    float: right;
+    width: 50%;
+}
+
+#lower-case .form-right .form-top input,
+.form-middle input,
+.form-bottom textarea {
+    width: 100%;
+}
+
+
+
+#lower-case .form-right button {
+    padding: 20px 90px;
+    background-color: #a1b49e;
+    border-radius: 3px;
+    border: none;
+}
+
+#lower-case .form-right button:hover {
+    background-color: #4a6659;
+}
+
+#lower-case .form-right .form-top input {
+    height: 35px;
+    padding-left: 10px;
+    border-bottom: 1px solid black;
+    background-color: #c1d8be;
+}
+
+#lower-case .form-right .form-top {
+    padding-bottom: 20px;
+}
+
+#lower-case .form-right .form-middle input {
+    height: 35px;
+    padding-left: 10px;
+    border-bottom: 1px solid black;
+    background-color: #c1d8be;
+}
+
+#lower-case .form-right .form-middle {
+    padding-bottom: 20px;
+}
+
+#lower-case .form-right .form-bottom textarea {
+    padding: 15px 0px 15px 10px;
+    border-bottom: 1px solid black;
+    background-color: #c1d8be;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+}
+
+input:placeholder-shown {
+    padding-left: 10px;
+}
+
+
+
+
+/* Birthday and Corporate Party Booking*/
+
+
+#booking {
+    height: 270px;
+    background-color: #c1d8be;
+    text-align: center;
+}
+
+#booking h2 {
+    font-family: 'Alexandria', sans-serif;
+    font-size: 41px;
+    padding-top: 2%;
+}
+
+#booking p {
+    padding-top: 0.4%;
+    padding-bottom: 35px;
+}
+
+#booking .btn-row {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+#booking .btn-row a {
+    text-decoration: none;
+    color: #000000;
+    padding: 20px 90px;
+    background-color: #86BAA1;
+    font-size: 20px;
+}
+
+#booking .btn-row a:hover {
+    background-color: #4a6659;
+}
+
+#booking .btn-row .btn-1 {
+    padding: 0% 2%;
+}
+
+#book-title {
+    text-align: center;
+    padding-top: 2%;
+    height: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+/* Birthday Party Packages */
+
+#booking-details {
+    display: flex;
+    height: 370px;
+    justify-content: center;
+    align-items: center;
+}
+
+#booking-details .birthday-a {
+    padding: 1% 4%;
+    background-color: #dab79b;
+    border-radius: 3px;
+    height: 300px;
+    margin-right: 20px;
+}
+
+#booking-details .birthday-b {
+    padding: 0.8% 4%;
+    background-color: #dab79b;
+    color: #000000;
+    height: 300px;
+    margin-left: 20px;
+}
+
+
+
+
+
+/* Corporate Packages */
+
+
+#corporate-details {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+#corporate-details .corp-a {
+    padding: 1% 4%;
+    background-color: #dab79b;
+    border-radius: 3px;
+    height: 300px;
+    margin-right: 20px;
+}
+
+#corporate-details .corp-b {
+    padding: 0.8% 4%;
+    background-color: #dab79b;
+    border-radius: 3px;
+    height: 300px;
+    margin-left: 20px;
+}
+
+.bottom-space {
+    height: 100px;
+}
